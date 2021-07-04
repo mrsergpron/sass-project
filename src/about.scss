@@ -1,0 +1,62 @@
+@import "partials/mixins";
+@import "partials/params";
+
+.about {
+  background-color: white;
+  &__content {
+    padding-top: 125px;
+    padding-bottom: 125px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__left {
+    width: 525px;
+    padding-right: 100px;
+
+    p {
+      line-height: 1.5;
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+  }
+  &__right {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-left: 3px dotted #ccc;
+    padding-left: 100px;
+  }
+
+  &__persons {
+    padding-right: 50px;
+  }
+
+  &__person {
+    list-style: none;
+
+    & .person__photo {
+      margin-bottom: 20px;
+    }
+    & .person__name {
+      margin-bottom: 10px;
+      text-align: center;
+      color: #444;
+      font-weight: 600;
+      font-size: 18px;
+    }
+    & .person__text {
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    & .person__social {
+      text-align: center;
+      padding-left: 10px;
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+}

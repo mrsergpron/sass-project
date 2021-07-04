@@ -1,0 +1,22 @@
+@import "partials/mixins";
+@import "partials/params";
+
+.header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &__title {
+    color: white;
+    font-size: 70px;
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+  }
+}
