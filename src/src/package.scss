@@ -1,0 +1,145 @@
+@import "partials/mixins";
+@import "partials/params";
+
+.package {
+  background: url(img/package_bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: contain;
+  margin-top: 100px;
+  padding-top: 100px;
+
+  border-bottom: 5px dashed #ccc;
+
+  &__title {
+    text-align: center;
+    font-size: 40px;
+    opacity: 0.6;
+    display: none;
+  }
+
+  &__tiles {
+    text-align: center;
+    height: 770px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  &__tile {
+    width: 255px;
+    height: 570px;
+    box-shadow: 1px 1px 5px #ccc;
+    background-color: white;
+    padding-top: 30px;
+    padding-bottom: 25px;
+
+    &:first-child {
+      border-top: 5px solid #f9d423;
+    }
+    &:last-child {
+      border-top: 5px solid #1abc9c;
+    }
+    &:nth-child(2) {
+      border-top: 5px solid #7f8c8d;
+    }
+    &:nth-child(3) {
+      border-top: 5px solid #f85f40;
+    }
+
+    & .tile__img {
+    }
+
+    & .tile__title {
+      margin: 20px;
+      opacity: 0.6;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    & .tile__list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin: 0 20px 35px;
+      padding: 0 20px 0 20px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    & .tile__item {
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      color: #999;
+
+      & .item__text {
+        font-weight: 300;
+      }
+
+      & .item__value {
+        &--yellow {
+          color: #f9d423;
+          font-weight: 300;
+        }
+
+        &--gray {
+          color: #7f8c8d;
+          font-weight: 300;
+        }
+
+        &--red {
+          color: #f85f40;
+          font-weight: 300;
+        }
+
+        &--green {
+          color: #1abc9c;
+          font-weight: 300;
+        }
+      }
+    }
+
+    & .tile__footer {
+      padding-bottom: 10px;
+
+      & .footer__cost {
+        padding-bottom: 10px;
+        margin: 0 80px 25px;
+
+        &--yellow {
+          border-bottom: 2px solid #f9d423;
+        }
+
+        &--gray {
+          border-bottom: 2px solid #7f8c8d;
+        }
+
+        &--red {
+          border-bottom: 2px solid #f85f40;
+        }
+
+        &--green {
+          border-bottom: 2px solid #1abc9c;
+        }
+      }
+
+      & .footer__price {
+        font-weight: bold;
+        font-size: 25px;
+
+        b {
+          vertical-align: top;
+          font-size: 20px;
+        }
+      }
+
+      & .footer__date {
+        color: #ccc;
+      }
+
+      & .footer__plan {
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
+}

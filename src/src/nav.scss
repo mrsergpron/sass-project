@@ -1,0 +1,48 @@
+@import "partials/mixins";
+@import "partials/params";
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  padding-top: 40px;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    width: 60px;
+    margin-right: 60px;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 60px;
+      height: 1px;
+      background-color: white;
+      opacity: 0;
+      left: 0;
+      top: 50px;
+      transition-property: opacity;
+      transition-duration: 500ms;
+    }
+
+    &:hover {
+      &::after {
+        opacity: 1;
+      }
+    }
+    & a {
+      color: white;
+    }
+  }
+}

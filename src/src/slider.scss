@@ -1,0 +1,39 @@
+@import "partials/mixins";
+@import "partials/params";
+
+.slider {
+  background: url(img/comment_bg.jpg) no-repeat;
+  background-position: center center;
+  background-size: cover;
+  h2 {
+    display: none;
+  }
+
+  &__slide {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  &__text {
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  &__name {
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+
+  &__icons {
+    text-align: center;
+
+    a {
+      margin-right: 5px;
+    }
+  }
+}

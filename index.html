@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="ie9.css">
+    <link rel="stylesheet" type="text/css" href="bundle.min.css">
+    <script src="https://kit.fontawesome.com/9374e0dc51.js" crossorigin="anonymous"></script>
+    <title>sass-project</title>
+
+    <!--[if lt IE 9]>
+
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+
+<![endif]-->
+    <!--[if lt IE 9]>
+          <link rel="stylesheet" type="text/css" href="css/ie9.css">
+          <![endif]-->
+
+    <!--[if lt IE 9]>
+          <script>
+               document.createElement("header");
+               document.createElement("footer");
+               document.createElement("section");
+               document.createElement("aside");
+               document.createElement("nav");
+               document.createElement("article");
+               document.createElement("hgroup");
+               document.createElement("time");
+          </script>
+          <noscript>
+               <strong>Внимание!</strong>
+               Поскольку ваш браузер не поддерживает HTML5, некоторые элементы воспроизводятся с помощью
+               JScript.
+               Однако в вашем браузере скрипты отключены, пожалуйста, включите их, чтобы браузер смог
+               отобразить данную
+               страницу.
+          </noscript>
+          <![endif]-->
+
+    <!---->
+</head>
+
+<body>
+    <main>
+        <div class="wrapper">
+            <div class="first-screen">
+                <nav class="nav view-port ">
+
+                    <div class="nav__logo"><a href="#"><img src="img/Logo.png" alt="logo"></a></div>
+
+                    <ul class="nav__menu">
+                        <li class="nav__link"><a href="#">Home</a></li>
+                        <li class="nav__link"><a href="#">Domain</a></li>
+                        <li class="nav__link"><a href="#">Hosting</a></li>
+                        <li class="nav__link"><a href="#">Clients</a></li>
+                        <li class="nav__link"><a href="#">Blog</a></li>
+                        <li class="nav__link"><a href="#">Support</a></li>
+                    </ul>
+                </nav>
+
+                <header class="header">
+
+                    <h1 class="header__title">HELLO!</h1>
+                    <h3 class="header__subtitle">We love our work...</h3>
+                    <h3 class="header__subtitle">And We're taking it seriously...</h3>
+
+                </header>
+
+            </div>
+
+            <div class="auth view-port">
+                <a class="auth__link" href="#">login</a>
+                <a class="auth__link" href="#">register</a>
+            </div>
+
+            <section class="buy">
+
+                <div class="buy__content view-port">
+
+                    <h2 class="buy__title">Would you like to buy a new domain?</h2>
+                    <h4 class="buy__subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                        auctor mauris ac nulla interdum, id molestier.</h4>
+
+                    <div class="buy__input-wrapper">
+
+                        <div class="buy__www buy__help">www.</div>
+
+                        <div class="buy__input-block">
+                            <input type="text" class="buy__input" placeholder="What do you want?">
+
+                            <div class="buy__domain">.com</div>
+
+                        </div>
+
+                        <div class="buy__select buy__help">
+                            <i class="fas fa-chevron-down buy__icon"></i>
+
+                            <ul class="select__dropdown">
+                                <div class="select__item">com</div>
+                                <div class="select__item">net</div>
+                                <div class="select__item">ru</div>
+                                <div class="select__item">org</div>
+                            </ul>
+                        </div>
+
+                    </div>
+
+                    <div class="buy__table">
+                        <div class="table__row">
+                            <div class="table__cell table__cell--top">.COM</div>
+                            <div class="table__cell table__cell--top">1 Year</div>
+                            <div class="table__cell table__cell--top">$9.00 USD</div>
+                            <div class="table__cell table__cell--top table__cell--nbp">Transfer Price no</div>
+                        </div>
+                        <div class="table__row">
+                            <div class="table__cell table__cell--bottom">.NET</div>
+                            <div class="table__cell table__cell--bottom">1 Year</div>
+                            <div class="table__cell table__cell--bottom">$9.00 USD</div>
+                            <div class="table__cell table__cell--bottom table__cell--nbp">Transfer Price no</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section class="package">
+            <h2 class="package__title view-port">OUR PACKAGE</h2>
+            <article class="package__tiles view-port">
+                <div class="package__tile">
+                    <img class="tile__img" src="img/anchor.png" alt="якорь">
+                    <h3 class="tile__title">BASIC PACKAGE</h3>
+                    <ul class="tile__list">
+                        <li class="tile__item"><span class="item__text">Disk Space (GB)</span>
+                            <span class="item__value item__value--yellow">50</span></li>
+                        <li class="tile__item"><span class="item__text">Subdomains</span>
+                            <span class="item__value item__value--yellow">50</span></li>
+                        <li class="tile__item"><span class="item__text">Transfer (GB)</span>
+                            <span class="item__value item__value--yellow">50</span></li>
+                        <li class="tile__item"><span class="item__text">Data bases</span>
+                            <span class="item__value item__value--yellow">1</span></li>
+                        <li class="tile__item"><span class="item__text">Dashboards</span>
+                            <span class="item__value item__value--yellow">1</span></li>
+                        <li class="tile__item"><span class="item__text">Control Panel & FTP</span>
+                        </li>
+                        <li class="tile__item"><span class="item__text">Free Support</span>
+                        </li>
+                    </ul>
+                    <div class="tile__footer">
+                        <div class="footer__cost footer__cost--yellow"><span class="footer__price"><b>$</b>
+                                15</span><span class="footer__date">/Mo</span></div>
+
+                        <div class="footer__plan">select plan</div>
+                    </div>
+                </div>
+
+                <div class="package__tile">
+                    <img class="tile__img" src="img/star.png" alt="звезда">
+                    <h3 class="tile__title">NORMAL PACKAGE</h3>
+                    <ul class="tile__list">
+                        <li class="tile__item"><span class="item__text">Disk Space (GB)</span>
+                            <span class="item__value item__value--gray">100</span></li>
+                        <li class="tile__item"><span class="item__text">Subdomains</span>
+                            <span class="item__value item__value--gray">100</span></li>
+                        <li class="tile__item"><span class="item__text">Transfer (GB)</span>
+                            <span class="item__value item__value--gray">100</span></li>
+                        <li class="tile__item"><span class="item__text">Data bases</span>
+                            <span class="item__value item__value--gray">2</span></li>
+                        <li class="tile__item"><span class="item__text">Dashboards</span>
+                            <span class="item__value item__value--gray">2</span></li>
+                        <li class="tile__item"><span class="item__text">Control Panel & FTP</span>
+                        </li>
+                        <li class="tile__item"><span class="item__text">Free Support</span>
+                        </li>
+                    </ul>
+                    <div class="tile__footer">
+                        <div class="footer__cost footer__cost--gray"><span class="footer__price"><b>$</b> 30</span><span
+                                class="footer__date">/Mo</span></div>
+
+                        <div class="footer__plan">select plan</div>
+                    </div>
+                </div>
+
+                <div class="package__tile">
+                    <img class="tile__img" src="img/star-red.png" alt="звезда">
+                    <h3 class="tile__title">BIG PACKAGE</h3>
+                    <ul class="tile__list">
+                        <li class="tile__item"><span class="item__text">Disk Space (GB)</span>
+                            <span class="item__value item__value--red">150</span></li>
+                        <li class="tile__item"><span class="item__text">Subdomains</span>
+                            <span class="item__value item__value--red">150</span></li>
+                        <li class="tile__item"><span class="item__text">Transfer (GB)</span>
+                            <span class="item__value item__value--red">150</span></li>
+                        <li class="tile__item"><span class="item__text">Data bases</span>
+                            <span class="item__value item__value--red">4</span></li>
+                        <li class="tile__item"><span class="item__text">Dashboards</span>
+                            <span class="item__value item__value--red">4</span></li>
+                        <li class="tile__item"><span class="item__text">Control Panel & FTP</span>
+                        </li>
+                        <li class="tile__item"><span class="item__text">Free Support</span>
+                        </li>
+                    </ul>
+                    <div class="tile__footer">
+                        <div class="footer__cost footer__cost--red"><span class="footer__price"><b>$</b> 40</span><span
+                                class="footer__date">/Mo</span></div>
+
+                        <div class="footer__plan">select plan</div>
+                    </div>
+                </div>
+
+                <div class="package__tile">
+                    <img class="tile__img" src="img/diamond.png" alt="алмаз">
+                    <h3 class="tile__title">BIGGEST PACKAGE</h3>
+                    <ul class="tile__list">
+                        <li class="tile__item"><span class="item__text">Disk Space (GB)</span>
+                            <span class="item__value item__value--green">250</span></li>
+                        <li class="tile__item"><span class="item__text">Subdomains</span>
+                            <span class="item__value item__value--green">250</span></li>
+                        <li class="tile__item"><span class="item__text">Transfer (GB)</span>
+                            <span class="item__value item__value--green">250</span></li>
+                        <li class="tile__item"><span class="item__text">Data bases</span>
+                            <span class="item__value item__value--green">6</span></li>
+                        <li class="tile__item"><span class="item__text">Dashboards</span>
+                            <span class="item__value item__value--green">6</span></li>
+                        <li class="tile__item"><span class="item__text">Control Panel & FTP</span>
+                        </li>
+                        <li class="tile__item"><span class="item__text">Free Support</span>
+                        </li>
+                    </ul>
+                    <div class="tile__footer">
+                        <div class="footer__cost footer__cost--green"><span class="footer__price"><b>$</b>
+                                70</span><span class="footer__date">/Mo</span></div>
+
+                        <div class="footer__plan">select plan</div>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="about">
+            <div class="about__content view-port">
+                <div class="about__left">
+                    <h2 class="about__title">About us</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At incidunt quis, distinctio fuga illo
+                        laboriosam, facilis possimus quam veritatis nemo quibusdam. Soluta mollitia inventore, suscipit
+                        delectus voluptatem labore tempora ad.</p>
+                </div>
+                <div class="about__right">
+                    <div class="about__persons">
+                        <ul class="about__person">
+                            <li class="person__photo"><img src="img/prof1.png" alt="face1"></li>
+                            <li class="person__name">Djonny Doe</li>
+                            <li class="person__text">Designer</li>
+                            <li class="person__social"><img src="img/fa-facebook.png" alt="facebook-icon">
+                                <img src="img/fa-twitter.png" alt="twitter-icon">
+                                <img src="img/fa-link-color.png" alt="link-icon"></li>
+                        </ul>
+                    </div>
+
+                    <div class="about__persons">
+                        <ul class="about__person">
+                            <li class="person__photo"><img src="img/prof2.png" alt="face1"></li>
+                            <li class="person__name">John Doe</li>
+                            <li class="person__text">Frontend</li>
+                            <li class="person__social"><img src="img/fa-facebook.png" alt="facebook-icon">
+                                <img src="img/fa-twitter.png" alt="twitter-icon">
+                                <img src="img/fa-link.png" alt="link-icon"></li>
+                        </ul>
+                    </div>
+
+                    <div class="about__persons">
+                        <ul class="about__person">
+                            <li class="person__photo"><img src="img/prof3.png" alt="face1"></li>
+                            <li class="person__name">Joe Doe</li>
+                            <li class="person__text">Developer</li>
+                            <li class="person__social"><img src="img/fa-facebook.png" alt="facebook-icon">
+                                <img src="img/fa-twitter.png" alt="twitter-icon">
+                                <img src="img/fa-link.png" alt="link-icon"></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <h2 class="slider__title">Слайдер</h2>
+            <div class="slider__slide view-port">
+                <div class="slider__text">"Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime qui itaque
+                    voluptatum, veniam dicta asperiores corporis assumenda alias, voluptatem consectetur labore.
+                    Suscipit, porro recusandae! Eos, expedita natus! Maxime, suscipit enim!"</div>
+                <div class="slider__name">John Doe</div>
+                <div class="slider__icons">
+                    <a href="#"><img src="img/comment-slide-active.png" alt="icon"></a>
+                    <a href="#"><img src="img/comment-slide.png" alt="icon"></a>
+                    <a href="#"><img src="img/comment-slide.png" alt="icon"></a>
+
+                </div>
+
+        </section>
+
+        <section class="feature">
+
+            <h2 class="feature__title">Our feature</h2>
+
+            <div class="feature__content view-port">
+
+                <div class="feature__tile">
+                    <div class="tile__icon tile__icon--yellow"><i class="fas fa-bolt"></i>
+                    </div>
+                    <div class="tile__title">
+                        <h3>Fast Servers</h3>
+                    </div>
+                    <div class="tile__text">Nulla dapibus neque augue, quis
+                        tincidunt tortor aliquam vitae.</div>
+                </div>
+
+
+                <div class="feature__tile">
+                    <div class="tile__icon tile__icon--blue"><i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="tile__title">
+                        <h3>Cloud Servers</h3>
+                    </div>
+                    <div class="tile__text">Nulla dapibus neque augue, quis
+                        tincidunt tortor aliquam vitae.</div>
+                </div>
+
+
+
+                <div class="feature__tile">
+                    <div class="tile__icon tile__icon--gray"><i class="fas fa-arrows-alt"></i>
+                    </div>
+                    <div class="tile__title">
+                        <h3>Domain Transfer</h3>
+                    </div>
+                    <div class="tile__text">Nulla dapibus neque augue, quis
+                        tincidunt tortor aliquam vitae.</div>
+                </div>
+
+
+                <div class="feature__tile">
+                    <div class="tile__icon tile__icon--orange"><i class="far fa-comments"></i>
+                    </div>
+                    <div class="tile__title">
+                        <h3>Live Support</h3>
+                    </div>
+                    <div class="tile__text">Nulla dapibus neque augue, quis
+                        tincidunt tortor aliquam vitae.</div>
+                </div>
+
+
+
+            </div>
+        </section>
+
+        <footer class="footer">
+
+            <div class="footer__header view-port">
+
+
+                <div class="footer__brand"><a href="#"><img src="img/Logo.png" alt="logo"></a></div>
+
+                <ul class="footer__nav">
+                    <li class="nav__item"><a href="#" class="nav__links">Home</a></li>
+                    <li class="nav__item"><a href="#" class="nav__links">About us</a></li>
+                    <li class="nav__item"><a href="#" class="nav__links">Blog</a></li>
+                    <li class="nav__item"><a href="#" class="nav__links">Policy</a></li>
+                    <li class="nav__item"><a href="#" class="nav__links">Contact</a></li>
+                </ul>
+
+            </div>
+            <div class="footer__content view-port">
+                <div class="footer__left">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam assumenda qui
+                        non praesentium voluptates aliquid in, nesciunt </p>
+                </div>
+
+                <div class="footer__center">
+                    <ul class="center__left">
+                        <li class="center__item"><i class="fas fa-chevron-right"></i><a href="#"
+                                class="center__link">Support</a></li>
+                        <li class="center__item"><i class="fas fa-chevron-right"></i><a href="#"
+                                class="center__link">Account</a></li>
+                        <li class="center__item"><i class="fas fa-chevron-right"></i><a href="#"
+                                class="center__link">Product catalog</a>
+                        </li>
+                        <li class="center__item"><i class="fas fa-chevron-right"></i><a href="#"
+                                class="center__link">Shortcodes</a></li>
+                    </ul>
+                    <ul class="center__right">
+                        <li class="center__item"><i class="fas fa-chevron-right"></i><a href="#"
+                                class="center__link">Site Map</a></li>
+                        <li class="center__item"><i class="fas fa-chevron-right"></i><a href="#"
+                                class="center__link">Whois Search</a></li>
+                        <li class="center__item"><i class="fas fa-chevron-right"></i><a href="#"
+                                class="center__link">Web Mail</a></li>
+                        <li class="center__item"><i class="fas fa-chevron-right"></i><a href="#"
+                                class="center__link">Find Domain</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__right">
+                    <ul class="right__content">
+                        <li class="right__list"><i class="fas fa-phone-alt right__icon"></i> <a href="tel:000-0000-000"
+                                class="right__link">000-0000-000</a></li>
+                        <li class="right__list"><i class="far fa-envelope right__email"></i> <a
+                                href="mailto:information@gmail.com" class="right__link">information@gmail.com</a></li>
+                        <li class="right__list">Lorem ipsum dolor sit amet.</li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </footer>
+
+    </main>
+
+
+
+</body>
+
+</html>

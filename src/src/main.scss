@@ -1,0 +1,53 @@
+@import "partials/mixins";
+@import "partials/params";
+@import url("https://fonts.googleapis.com/css2?family=Roboto");
+@font-face {
+  font-family: Roboto;
+  src: url("fonts/roboto-regular-webfont.woff") format("woff"),
+    url("fonts/roboto-regular-webfont.woff2") format("woff2"),
+    url("fonts/Roboto-Regular.ttf") format("truetype");
+}
+
+//https://www.fontsquirrel.com/tools/webfont-generator
+
+html,
+body {
+  @include clear;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  @include clear;
+}
+
+a {
+  text-decoration: none;
+}
+
+.view-port {
+  margin: 0 auto;
+  max-width: $view-port;
+}
+
+.wrapper {
+  max-width: 100%;
+  @include clear;
+  background-color: black;
+}
+
+.first-screen {
+  width: 100vw;
+  height: 100vh;
+  background: url(img/header_bg.jpg) no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
